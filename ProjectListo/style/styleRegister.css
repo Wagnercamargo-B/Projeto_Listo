@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu li {
+  margin: 10px;
+  display: inline-flex;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+}
+
+/*.container_register h1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-column-start: 2;
+}*/
+
+.container_register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(https://empreender.com.br/wp-content/uploads/2023/05/comunicacao-visual-e-commerce-scaled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.forme_sign-up {
+  backdrop-filter: blur(35px);
+  width: 410px;
+}
+
+.forme_sign-up .form_sign-up {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.forme_sign-up h1 {
+  margin: 20px 10px 10px 10px;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+
+.forme_sign-up input::placeholder {
+  color: #fff;
+}
+
+.forme_sign-up input {
+  width: 90%;
+  height: 85%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(225, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 25px 10px 10px;
+  margin: 5px 0px 20px 20px;
+}
+
+.form_sign-up input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form_sign-up img {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  max-height: 30px;
+  height: auto;
+  width: auto;
+}
+
+.forme_sign-up .btn_sign-up {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: 600;
+  color: #000;
+}
+
+.forme_sign-up .login_link {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.login_link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login_link a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  display: grid;
+  font-size: 15px;
+  grid-template-columns: repeat(3 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: #0f222d;
+  height: 100px;
+  gap: 5px;
+}
+
+.first_column {
+  grid-column-start: 1;
+}
+
+.first_column a {
+  color: #fff;
+}
+
+.second_column {
+  grid-column-start: 2;
+}
+
+.second_column a {
+  color: #fff;
+}
+
+.third_column {
+  grid-column-start: 3;
+}
+
+footer .third_column img {
+  margin: 5px;
+  height: 80px;
+}
